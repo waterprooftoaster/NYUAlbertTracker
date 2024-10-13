@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import requests 
+from email.mime.text import MIMEText
+import requests
+import smtplib
 
 url = "https://albert.nyu.edu/albert_index.html"
 page = requests.get(url)
